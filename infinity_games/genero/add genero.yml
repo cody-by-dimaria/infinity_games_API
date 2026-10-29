@@ -1,0 +1,22 @@
+info:
+  name: add genero
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/genero
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Ação",
+        "descricao": "Jogos com combates, desafios e muita aventura."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

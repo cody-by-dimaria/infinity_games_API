@@ -90,6 +90,7 @@ app.delete("/genero/:id", async (req,res) =>  {
     return res.status(200).json({mensagem: "Gênero removido com sucesso!"})
 })
 
+
 app.put("/games/:id", async (req,res) => {
     const id = req.params.id
     const {nome, desenvolvedora, sinopse, id_genero, } = req.body
